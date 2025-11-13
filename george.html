@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine George Almighty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black flex items-center justify-center p-4">
+    <div class="god-container relative w-full max-w-4xl">
+        <div class="letters-grid grid grid-cols-6 gap-4 md:gap-8">
+            <!-- G -->
+            <div class="god-letter g-letter h-32 md:h-48 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-500 hover:scale-110 hover:shadow-2xl">
+                <span class="text-6xl md:text-8xl font-bold">G</span>
+            </div>
+            <!-- E -->
+            <div class="god-letter e-letter h-32 md:h-48 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-500 hover:scale-110 hover:shadow-2xl">
+                <span class="text-6xl md:text-8xl font-bold">E</span>
+            </div>
+            <!-- O -->
+            <div class="god-letter o-letter h-32 md:h-48 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-500 hover:scale-110 hover:shadow-2xl">
+                <span class="text-6xl md:text-8xl font-bold">O</span>
+            </div>
+            <!-- R -->
+            <div class="god-letter r-letter h-32 md:h-48 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-500 hover:scale-110 hover:shadow-2xl">
+                <span class="text-6xl md:text-8xl font-bold">R</span>
+            </div>
+            <!-- G -->
+            <div class="god-letter g2-letter h-32 md:h-48 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-500 hover:scale-110 hover:shadow-2xl">
+                <span class="text-6xl md:text-8xl font-bold">G</span>
+            </div>
+            <!-- E -->
+            <div class="god-letter e2-letter h-32 md:h-48 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-500 hover:scale-110 hover:shadow-2xl">
+                <span class="text-6xl md:text-8xl font-bold">E</span>
+            </div>
+        </div>
+        
+        <div class="halo absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="halo-circle rounded-full opacity-20"></div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 left-0 right-0 text-center text-white opacity-70">
+        <p>Click or hover the divine letters</p>
+        <i data-feather="chevrons-down" class="animate-bounce inline-block mt-2"></i>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
